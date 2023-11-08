@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+/* RESET ABOVE */
+
+body {
+  background-color: #202020;
+  color: whitesmoke;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#HeaderContent {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 158px;
+  border-bottom: 8px solid #202020;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+#TitleWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#HeaderBG {
+  height: 150px;
+  width: 100vw;
+  object-fit: cover;
+  filter: blur(3px) brightness(50%);
+}
+
+#ContactsAndAboutUs {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+#Title {
+  color: #eff4f9;
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#Subtitle {
+  font-weight: 400;
+  color: #bbb;
+  margin-left: 1rem;
+}
+
+#Contact {
+  font-size: 30px;
+  margin: 20px;
+  cursor: pointer;
+  color: #eff4f9;
+  background-color: transparent;
+  border: none;
+}
+
+#AboutUs {
+  font-size: 30px;
+  margin: 20px;
+  cursor: pointer;
+  color: #eff4f9;
+  background-color: transparent;
+  border: none;
+}
+
+#MainContent {
+  padding-top: 100px;
+}
+
+.ImageBlock:nth-child(1),
+.ImageBlock:nth-child(3) {
+  padding-right: 10vw;
+}
+
+.ImageBlock:nth-child(2) {
+  padding-left: 10vw;
+}
+
+.ImageBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+}
+
+.ImageBlockText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+}
+
+.ImageBlock svg {
+  width: 600px;
+  height: 500px;
+  stroke: #111;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
+}
+
+.ImageBlock:nth-child(3) svg {
+  stroke-width: 0.6px;
+}
+
+.ImageBlock h2 {
+  color: whitesmoke;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.ImageBlock p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #bbb;
+}
+
+#FacebookImage {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  justify-content: space-around;
+  /* flex-direction: column; */
+  width: 100vw;
+  height: 100px;
+  background-color: #111;
+  margin-top: 100px;
+  padding: 0 45vw;
+}
+
+footer h3 {
+  display: flex;
+  text-align: center;
+  color: #bbb;
+  flex-direction: column;
+}
+
+/* Ipad vertical */
+@media screen and (max-aspect-ratio: 1) {
+  #HeaderContent {
+    height: 200px;
+    border-bottom: 10px solid #202020;
+  }
+  #HeaderBG {
+    height: 190px;
+  }
+  #Title {
+    font-size: 3.3rem;
+    text-wrap: nowrap;
+  }
+
+  #Subtitle {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  #Contact {
+    font-size: 1.8rem;
+  }
+
+  #AboutUs {
+    font-size: 1.8rem;
+    text-wrap: nowrap;
+  }
+  #MainContent {
+    padding-top: 35px;
+  }
+  .ImageBlock {
+    padding: 5vw 7vw;
+  }
+  .ImageBlockText {
+    width: 45vw;
+  }
+
+  .ImageBlock svg {
+    width: 350px;
+    height: 250px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+  }
+  .ImageBlock h2 {
+    font-size: 2.2rem;
+    padding: 1vw;
+  }
+
+  .ImageBlock p {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    height: 100px;
+    padding: 0 35vw;
+    font-size: 1.5rem;
+  }
+}
+
+/* Phone vertical */
+@media screen and (max-aspect-ratio: 0.7) {
+  #HeaderContent {
+    height: 258px;
+    border-bottom: 8px solid #202020;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  #HeaderBG {
+    height: 250px;
+  }
+  #Title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-wrap: nowrap;
+  }
+
+  #Subtitle {
+    font-weight: 400;
+    font-size: 1.75rem;
+    margin-left: 2rem;
+  }
+
+  #Contact {
+    font-size: 2rem;
+  }
+
+  #AboutUs {
+    font-size: 2rem;
+    text-wrap: nowrap;
+  }
+
+  #MainContent {
+    padding-top: 40px;
+  }
+
+  .ImageBlock {
+    padding: 10vw 5vw;
+  }
+
+  .ImageBlockText {
+    width: 55vw;
+  }
+
+  .ImageBlock svg {
+    width: 400px;
+    height: 300px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
+  }
+
+  .ImageBlock h2 {
+    font-size: 3.3rem;
+  }
+
+  .ImageBlock p {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    height: 150px;
+    padding: 0 20vw;
+    font-size: 2rem;
+  }
+}
